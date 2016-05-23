@@ -112,6 +112,12 @@ Module.register("currentweather",{
 			wrapper.className = "dimmed light small";
 			return wrapper;
 		}
+		var loc = document.createElement("div");
+		loc.innerHTML = this.config.location;
+		loc.className = "bright large";
+
+		wrapper.appendChild(loc);
+
 
 		var small = document.createElement("div");
 		small.className = "normal medium";
