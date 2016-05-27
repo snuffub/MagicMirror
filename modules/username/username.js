@@ -6,11 +6,11 @@
  * By Andrew Jennings
  */
 
-Module.register("counter",{
+Module.register("username",{
 
 	// Default module config.
 	defaults: {
-		text: ""
+		text:"Andrew"
 	},
 
 	// Override dom generator.
