@@ -10,13 +10,13 @@ Module.register("username",{
 
 	// Default module config.
 	defaults: {
-		text:"Andrew"
+		text:"Empty Name"
 	},
 
 	// Override dom generator.
 	getDom: function() {
 		var wrapper = document.createElement("div");
-		wrapper.innerHTML = this.config.text;
+		wrapper.innerHTML = this.config.FriendlyName;
 		return wrapper;
 	}
 });
