@@ -101,29 +101,17 @@ var userConfig = {
 				position: 'top_left',
 				config: {
 					email: 'user@domain.com',
-					FriendlyName: 'John Doe',
+					FriendlyName: 'Jane Smith',
 					position:'top_left'
 				}
 			},
 
-			{	
-				module: 'calendar',
-				header: 'US Holidays',
-				position: 'top_left',
-				config: {
-					calendars: [
-						{
-							symbol: 'calendar-check-o ',
-							url: 'webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics'
-						}
-					]
-				}
-			},
+
 			{
 				module: 'currentweather',
 				position: 'top_right',
 				config: {
-					location: 'New York',
+					location: 'Pittsburgh',
 					appid: '27a399a2ae850a916711aa005ba2a436'
 				}	
 			},
@@ -132,8 +120,8 @@ var userConfig = {
 				position: 'top_right',
 				header: 'Weather Forecast',
 				config: {
-		            location: 'New York',
-		            appid: '27a399a2ae850a916711aa005ba2a436'
+		            		location: 'Pittsburgh',
+		            		appid: '27a399a2ae850a916711aa005ba2a436'
 				}
 			},
 			{

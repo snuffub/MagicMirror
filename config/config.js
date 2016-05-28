@@ -5,14 +5,7 @@
  */
 
 var config = {
-	port: 8080,
-	
-	language: userConfig["user2@domain.com"].language,
-	timeFormat: userConfig["user2@domain.com"].timeFormat,
-	units: userConfig["user2@domain.com"].units,
-
-	currentUser: 'foo@domain.com',
-	modules: userConfig["user2@domain.com"].modules
+	currentUser: "user@domain.com"
 };
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/

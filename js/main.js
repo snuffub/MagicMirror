@@ -206,8 +206,12 @@ var MM = (function() {
 			Log.error("Config file is missing! Please create a config file.");
 			return;
 		}
-
-		config = Object.assign(defaults, config);
+		if (typeof userConfig === "undefined") {
+			config - defaults;
+			Log.error("userConfig file is missing! Please create a config file.");
+			return;
+		}
+		config = Object.assign(defaults, userConfig[config.currentUser]);
 	};
 
 	/* setSelectionMethodsForModules()
