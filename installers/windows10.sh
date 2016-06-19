@@ -21,16 +21,6 @@ echo -e "\e[0m"
 # Define the tested version of Node.js. 
 NODE_TESTED="v5.1.0"
 
-#Determine which Pi is running.
-ARM=$(uname -m) 
-
-#Check the Raspberry Pi version.
-#if [ "$ARM" != "armv7l" ]; then
-#	echo -e "\e[91mSorry, your Raspberry Pi is not supported."
-#	echo -e "\e[91mPlease run MagicMirror on a Raspberry Pi 2 or 3."
-#	exit;
-#fi
-
 #define helper methods.
 function version_gt() { test "$(echo "$@" | tr " " "\n" | sort -V | head -n 1)" != "$1"; }
 function command_exists () { type "$1" &> /dev/null ;}
@@ -113,7 +103,7 @@ else
 fi
 
 echo " "
-echo -e "\e[92mWe're ready! Run \e[1m\e[97mDISPLAY=:0 npm start\e[0m\e[92m from the ~/MagicMirror directory to start your MagicMirror.\e[0m"
+echo -e "\e[92mWe're ready! Run nmp serveronly from the ~/MagicMirror directory to start your MagicMirror.\e[0m"
 echo " "
 echo " "
 
